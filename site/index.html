@@ -1,5 +1,27 @@
 <!doctype html>
 <html>
+<style>
+    section { 
+        color:blueviolet;
+        font-style: italic;
+        background-color: cornsilk;
+    } /*this will make every section have those charachtersitics */
+
+    .cute { 
+        color: palevioletred;
+        background-color: plum;
+        opacity: .8;
+    } /* the . defines a class. To apply this class, add attribute class = "cute" in the tag*/
+
+    #yummy, aside { 
+        color:purple;
+        font-weight: bold;
+        background-color: greenyellow;
+    } /* the # makes that into an id key that has some attributes, to call it you need id ="yummy" . 
+        You can give multiple things the same style by adding them with a comma in  between */
+
+    .
+</style>
 
 <head>
     <meta charset = "utd-8">
@@ -11,11 +33,12 @@
 <body>
     <header> This contains some generic information about the website</header>
     <nav> usually contains links</nav>
-    <h1> Main title</h1>
-    <h2> Section 2 Title</h2>
+    <h1 id = "yummy"> Main title</h1>
+    <h2 class="cute"> Section 2 Title</h2>
     <section>
         Section 1
         <article>
+            <div><img src = "photo-1509114397022-ed747cca3f65.jfif" alt = "Cloudy skies" width ="675" height = "900"> </div>
             The things that make me happy are:
             <ul>
                 <li> My family</li>

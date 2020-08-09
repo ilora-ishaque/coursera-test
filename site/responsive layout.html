@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /*The 12 colums layout helps make a website resposive. We devide the page 
+    in 12 columns and, depending on the size of the dexktop screen, we tell 
+    how many colums should an element occupy. 
+
+    The 2 main tricks here are float and the fact that making a class within the
+    curly brackets of @media ensures that the classes are active only when the @media
+    statement is true. This means that we can give a lot of classes to an element, 
+    and we know that the only one that will go though will be the one defined in the
+    appropriate @media for that device*/
+
+    p {
+        border:solid black 1px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row{
+        width: 100%;
+    }
+    @media(min-width: 1200px){
+        .cl_lg_width_3{
+            width: 25%; /*Ho these calculations work is that , if you want an
+            item to take up 3 of your 12 colums, that's 3/12 =25%*/
+            float:left; /*remember to float these bad boys"*/
+        }
+    
+    }
+    
+    @media(min-width: 700px) and (max-width:1199px){
+        .cl_md_width_6{
+            width: 50%;
+            float:left;
+        }
+    
+    }
+
+    
+
+
+</style>
+<body>
+    <div class="row">
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p1</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p2</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p3</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p4</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p5</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p6</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p7</p></div>
+        <div class="cl_lg_width_3 cl_md_width_6"><p> p8</p></div>
+
+
+
+    </div>
+
+    
+</body>
+</html>

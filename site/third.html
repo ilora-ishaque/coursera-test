@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="stylesheet.css">
+
+<style>
+
+    p , span {
+        border: 1px solid black;
+        margin: 10px;
+    }
+    .p1 {
+        background-color: blueviolet;   
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top: 20px;}
+
+        @media(max-width: 360px){
+            .p1{width: 50%;}}
+            
+        @media(min-width:361px) and  (max-width:768px){
+           .p1{ width:350px;
+            height:350px;}}
+        
+    .p2 {
+        background-color:coral;   
+        clear: both;
+        position: absolute;
+        top: 5px;
+        left:5px;
+    }
+    .p3 {
+        background-color:greenyellow;  
+        position: relative;
+        bottom: 10px;
+        right:10px; 
+    }
+    .p4 {
+        background-color:skyblue;   
+    }
+</style>
+
+<body>
+    <section> Section 1
+
+        <p class="p1">P 1 S1</p>
+        <span class="p2">P 2 S1</span>
+        <span class="p3">P 3 S1</span>
+
+        <p class="p4">P 4 S1</p>
+
+    </section>
+
+    <div>
+        <section class="column">
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+           
+        </section>
+
+        <section class="column">
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            
+
+        </section>
+
+
+
+    </div>
+    
+
+</body>
+</html>

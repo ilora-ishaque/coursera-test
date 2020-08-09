@@ -1,0 +1,104 @@
+body{
+    font-family: Georgia, serif
+}
+
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+
+
+
+
+
+
+.row { 
+    width: 100%
+}
+
+@media(max-width: 767px) {
+    .col-sm-12{
+        float:left;
+        width:100%;
+    }
+}
+
+@media(min-width: 768px) and (max-width:991px) {
+    .col-md-6, .col-md-12{
+        float:left;}
+    .col-md-6 {width:50%;}
+    .col-md-12 {width:100%;}  
+}
+
+@media(min-width: 992px) {
+    .col-lg-4{
+        float:left;
+        width:33.3%;
+    }
+}
+
+
+
+section > div {
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+
+div > div {
+    border: solid black 2px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rosybrown;
+    
+    
+}
+
+div > h2 {
+    border: solid black 1px;
+
+    font-size: 1.25em;
+
+
+    position: absolute;
+    right:0px;
+    top:0px;
+
+
+
+    margin-block-start: 0px;
+
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; /* Included these margins rules to override the chrome's ones*/
+
+
+    
+
+    
+    
+}
+
+div > p { 
+    /*position: absolute;*/
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.3em;
+
+    width:90%;
+
+    
+}
+
+#clothes {background-color: royalblue;}
+#makeup {background-color: salmon;}
+#skin {background-color: sandybrown;}
+
+
+

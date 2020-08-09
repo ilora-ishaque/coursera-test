@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel= "stylesheet" href="stylesheet.css">
+
+<style>
+
+    h1.hello { color :khaki} /* This turn specifically all h1 with the class hello into khaki color.NB No Space. Can also write
+    .hello.world and would apply only to the ones with class = "hello world" but not to class = "hello" etc */
+
+    section > p { color:lightcoral} /*This makes any p that is direct child of section to become lightcoral. So  if there was a p inside spam that would have worked*/
+
+    div span {color:lightgreen} /* This makes any span inside any div become lightgreen, no matter how nested in it is*/
+
+    a:link, a:visited {
+        background-color: mediumblue;
+        border:5px solid rebeccapurple;
+        color:orangered;
+        display:block;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 1px;
+
+    } /* :link, :hover etc are known as pseudo class as their behaviour is conditional . This above is the code to make a button, */
+    
+    a:hover, a:active { background-color: lightskyblue;}
+
+    section p:nth-child(2) {
+        background-color: burlywood;
+    }
+
+    .im {
+        text-align: left;
+
+        width:500px;
+        height: 500px;
+
+        background: url(photo-1509114397022-ed747cca3f65.jfif) center;
+    }
+
+
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+
+    <a href= "index.html" title="index"> index</a>
+
+    <h1 class="hello"> Dresses </h1>
+
+    <section>
+        let's get started!
+
+        <p class=box>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+
+            <p> HOLDUP</p>
+            
+        </p>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+                <span> HOLDUP</span>
+                
+            </p>
+        </div>
+        
+
+
+    </section>
+
+    <div class=im>
+        Pink Orange Skyyy
+    </div>
     
 </body>
 </html>
