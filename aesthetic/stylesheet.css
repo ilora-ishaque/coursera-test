@@ -1,0 +1,40 @@
+body{
+    background-color: #CDB3D4;
+    font-family: 'Pangolin', cursive;;
+}
+
+#header-nav{
+    background-color: #ffbe88;
+    border-radius: 0;
+    border:0;
+}
+
+#logo-image{
+    background: url(images/logo2.jfif) no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus , .navbar-brand a:link {
+    font-family: 'Lobster', cursive;
+    text-decoration:none;
+    text-shadow: 1px 1px 1px #63bcc9;
+}
+
+.container * {
+    color:#47CACC;
+    
+    }
+
+li a {
+    margin: 15px;
+    text-align:center;
+}
+
+@media (min-width:"991px") {
+
+}

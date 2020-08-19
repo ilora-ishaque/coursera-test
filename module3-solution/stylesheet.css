@@ -1,0 +1,59 @@
+body{
+    
+    font-family: 'Pangolin', cursive;;
+}
+
+#header-nav{
+    background-color: #ffbe88;
+    border-radius: 0;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+
+
+
+
+.navbar-brand a:hover, .navbar-brand a:focus , .navbar-brand a:link {
+    font-family: 'Lobster', cursive;
+    text-decoration:none;
+    text-shadow: 1px 1px 1px #63bcc9;
+}
+
+
+.container * {
+    
+    
+    }
+
+li a {
+    margin: 15px;
+    text-align:center;
+}
+
+@media (min-width:"991px") {
+
+}
+
+div section{
+    box-sizing: border-box;
+    height: 700px;
+    border:solid 1px black;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #ffbe88;
+}
+
+h2 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+h3 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
